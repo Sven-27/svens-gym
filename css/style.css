@@ -27,6 +27,11 @@ h3{
   font-family: var(--oswald);
   font-weight: 700;
   color: var(--txt-gray);
+  padding-inline: .6rem;
+}
+
+h2{
+  font-size: 1.1rem;
 }
 
 .active{
@@ -78,7 +83,7 @@ header img{
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  transition: transform .8s linear; 
+  transition: .8s linear; 
   transform: translateX(100%);
 }
 
@@ -103,6 +108,13 @@ header .fa-bars{
 main{
   inline-size: 100%;
 }
+
+main header{
+  background-color: inherit;
+}
+
+
+
 
 
 @media screen and (min-width: 768px){
