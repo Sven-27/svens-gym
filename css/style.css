@@ -63,9 +63,8 @@ header{
   background-color: var(--bg-secondary);
 }
 
-header > img{
-  inline-size: 7rem;
-  margin-block: .6rem;
+header img{
+  inline-size: 5rem;
 }
 
 @media screen and (max-width: 767px){
@@ -101,6 +100,10 @@ header .fa-bars{
 }
 }
 
+main{
+  inline-size: 100%;
+}
+
 
 @media screen and (min-width: 768px){
   header{
@@ -110,11 +113,6 @@ header .fa-bars{
     justify-content: space-between;
     align-items: center;
     padding-inline: 2rem;
-  }
-
-  header > img{
-    inline-size: 6rem;
-    padding-block: 0;
   }
 
   header li{
@@ -135,9 +133,7 @@ header .fa-bars{
 }
 
 @media screen and (min-width: 1024px) {
-  header{
-
-  }
+  
 
 }
 
