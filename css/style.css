@@ -6,3 +6,138 @@
   box-sizing: border-box;
 }
 
+
+:root{
+  --montserrat: 'Montserrat', sans-serif;
+  --bg-primary: rgb(230,230,230);
+  --bg-secondary: rgb(180,180,180);
+  --txt-red: rgb(180,0,0);
+  --txt-gray: rgb(100,100,100);
+}
+
+body{
+  background-color: var(--bg-primary); 
+  font-family: var(--montserrat);
+}
+
+h1,
+h2,
+h3{
+  --oswald: 'Oswald', sans-serif;
+  font-family: var(--oswald);
+  font-weight: 700;
+  color: var(--txt-gray);
+}
+
+.active{
+  text-decoration: underline;
+}
+
+a{
+  text-decoration: none;
+  --webkit-tap-highlight-color: transparent;
+  color: var(--txt-red);
+  
+}
+a:visited{
+  color: rgb(100,0,0);
+}
+a:hover{
+  color: var(--txt-gray);
+}
+a:active{
+  color: rgb(0,150,0);
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  inline-size: 100%;
+  align-items: center;
+  background-color: var(--bg-secondary);
+}
+
+header > img{
+  inline-size: 7rem;
+  margin-block: .6rem;
+}
+
+@media screen and (max-width: 767px){
+  header > nav{
+  position: fixed;
+  top: 0;
+  right: 0;
+  inline-size: 200px;
+  block-size: 100%;
+  background-color: var(--bg-secondary);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  transition: transform .8s linear; 
+  transform: translateX(100%);
+}
+
+.menu{
+  transform: translateX(0);
+}
+
+nav a{
+  line-height: 1.8;
+}
+
+header i{
+  color: var(--txt-red);
+  font-size: 1.5rem;
+}
+
+header .fa-bars{
+  margin-block-end: 1rem;
+}
+}
+
+
+@media screen and (min-width: 768px){
+  header{
+    inline-size: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 2rem;
+  }
+
+  header > img{
+    inline-size: 6rem;
+    padding-block: 0;
+  }
+
+  header li{
+    margin-inline: .5rem;
+  }
+
+  header a{
+    font-size: 1.2rem;
+  }
+
+  header ul{
+    display: flex;
+  }
+
+  header .fa-solid{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header{
+
+  }
+
+}
+
