@@ -1,6 +1,10 @@
-Bij het menu heb ik een hamburger menu gemaakt die toggled middels javascript. 
+* Bij het menu heb ik een hamburger menu gemaakt die toggled middels javascript. 
 Er zit een external js file die via de script element boven de closing tag van de body
 gekoppeld is aan de html.
 
-Bij de picture die onder de header staat heb ik voor alle pagina's dezelfde afbeeldingen gebruikt. 
+* In de css heb ik de styling van de mobile menu (de nav) in een media query met een max-width gezet omdat ik wil dat 
+de styling alleen maar geldt voor mobile en dus niet geldig meer is vanaf tablet omdat ik daar een andere styling
+toepas. 
+
+* Bij de picture die onder de header staat heb ik voor alle pagina's dezelfde afbeeldingen gebruikt. 
 Omdat het anders tijdrovend wordt en het in principe hetzelfde is voor elke pagina.
