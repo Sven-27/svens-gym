@@ -12,6 +12,7 @@
   --bg-primary: rgb(230,230,230);
   --bg-secondary: rgb(180,180,180);
   --red: rgb(180,0,0);
+  --dark-red: rgb(100,0,0);
   --gray: rgb(100,100,100);
 }
 
@@ -45,7 +46,7 @@ a{
   
 }
 a:visited{
-  color: rgb(100,0,0);
+  color: var(--dark-red);
 }
 a:hover{
   color: var(--gray);
@@ -59,7 +60,6 @@ ul{
   padding: 0;
   margin: 0;
 }
-
 
 body > header{
   display: flex;
@@ -85,6 +85,32 @@ header > a::before{
   color: rgb(230,230,230);
   font-size: .8rem;
   z-index: 10;
+}
+
+nav li:nth-of-type(2){
+  position: relative;
+}
+
+nav li:nth-of-type(2) > div{
+  display: none;
+  border: 1px solid var(--dark-red);
+  padding: .3rem .5rem;
+  background-color: rgb(150,150,150);
+  border-radius: 3px;
+  position: absolute;
+  top: 24px;
+  left: 0;
+  inline-size: 100%;
+}
+
+nav li:nth-of-type(2):hover > div{
+  display: flex;
+  flex-direction: column;
+}
+
+nav li:nth-of-type(2) > div > a{
+  line-height: 1.4;
+  color: var(--dark-red);
 }
 
 article > header{
