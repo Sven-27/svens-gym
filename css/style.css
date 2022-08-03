@@ -87,12 +87,26 @@ header > a::before{
   z-index: 10;
 }
 
-nav li:nth-of-type(2){
+nav button{
+  background-color: transparent;
+  border: none;
+  color: var(--dark-red);
+  font-size: 1.1rem;
+  font-weight: 400;
+  font-family: var(--montserrat);
+  line-height: 1.4;
+  cursor: pointer;
+}
+
+nav button:hover{
+  color: var(--gray);
+}
+
+nav li:nth-of-type(6){
   position: relative;
 }
 
-nav li:nth-of-type(2) > div{
-  display: none;
+nav li:nth-of-type(6) > div{
   border: 1px solid var(--dark-red);
   padding: .3rem .5rem;
   background-color: rgb(150,150,150);
@@ -100,7 +114,27 @@ nav li:nth-of-type(2) > div{
   position: absolute;
   top: 24px;
   left: 0;
-  inline-size: 100%;
+  right: -50px;
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgb(230,230,230);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+} 
+
+.dropdown-content a{
+  display: block;
+  color: var(--dark-red);
+}
+
+.show{
+  display: block;
 }
 
 nav li:nth-of-type(2):hover > div{
@@ -163,6 +197,12 @@ header i{
 header .fa-bars{
   margin-block-end: 1rem;
 }
+
+nav .fa-angle-down{
+  color: var(--dark-red);
+  margin-inline-start: .3rem;
+  font-size: 1.1rem;
+}
 }
 
 main{
@@ -198,6 +238,27 @@ body > header{
 
   header .fa-solid{
     display: none;
+  }
+
+  nav .fa-angle-down{
+    display: inline-block;
+    margin-inline-start: .2rem;
+  }
+
+  nav li:nth-of-type(6) > div{
+    position: absolute;
+    left: -100px;
+    inline-size: 100%;
+  }
+
+  nav li:nth-of-type(6) > div > a{
+    line-height: 1.4;
+    color: var(--dark-red);
+    font-size: 1rem;
+  }
+
+  nav li:nth-of-type(6) > div > a:hover{
+    color: var(--gray);
   }
 }
 
