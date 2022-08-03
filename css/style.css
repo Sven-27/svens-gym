@@ -213,6 +213,20 @@ main header{
   background-color: inherit;
 }
 
+main > section > h2{
+  margin-block: .32rem;
+} 
+
+main > section > iframe{
+  inline-size: 100vw;
+  block-size: 210px;
+}
+
+main > section > video{
+  inline-size: 100vw;
+  block-size: 210px;
+}
+
 @media screen and (min-width: 768px){
   
 body > header{
