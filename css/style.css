@@ -25,21 +25,16 @@ article p{
   line-height: 1.3;
 }
 
-main > section:first-of-type > div{
+section:first-of-type > div{
   padding-inline: 1rem;
   inline-size: 100%;
 }
 
-main > section:first-of-type img,
-main > section:first-of-type iframe,
-main > section:first-of-type video{
+main,
+section:first-of-type img,
+section:first-of-type iframe,
+section:first-of-type video{
  inline-size: 100%;
-}
-
-
-
-main{
-  inline-size: 100%;
 }
 
 main header{
@@ -50,53 +45,33 @@ main > section > h2{
   margin-block: .3rem;
 } 
 
-@media screen and (min-width: 768px){
-  
-body > header{
-    inline-size: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding-inline: 2rem;
-  }
+main > section:last-of-type{
+  padding-inline: 1rem;
+}
 
-  header li{
-    margin-inline: .5rem;
-  }
+section:last-of-type > figure{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin-block-end: 1rem;
+  background-color: var(--bg-secondary);
+  border-radius: 5px;
+  padding: .5rem;
+}
 
-  header a{
-    font-size: 1.2rem;
-  }
+section:last-of-type > figure > img{
+  margin-block-start: .3rem;
+  inline-size: 90%;
+  align-self: center;
+}
 
-  header ul{
-    display: flex;
-  }
+section:last-of-type figcaption{
+  padding-inline: 1rem;
+}
 
-  header .fa-solid{
-    display: none;
-  }
-
-  nav .fa-angle-down{
-    display: inline-block;
-    margin-inline-start: .2rem;
-  }
-
-  nav li:nth-of-type(6) > div{
-    position: absolute;
-    left: -100px;
-    inline-size: 100%;
-  }
-
-  nav li:nth-of-type(6) > div > a{
-    line-height: 1.4;
-    color: var(--dark-red);
-    font-size: 1rem;
-  }
-
-  nav li:nth-of-type(6) > div > a:hover{
-    color: var(--gray);
-  }
+section:last-of-type p{
+  margin-block-start: .3rem;
+  font-size: .8rem;
 }
 
 @media screen and (min-width: 1024px) {

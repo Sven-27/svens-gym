@@ -29,8 +29,20 @@ h3{
   padding-inline: 1rem;
 }
 
+h3{
+  padding-inline: 0;
+}
+
 h2{
   font-size: 1.1rem;
+}
+
+hr{
+  border: none;
+  margin: 1rem;
+  block-size: 2px;
+  background-image: linear-gradient(to right, var(--gray), var(--bg-primary), var(--gray), var(--gray));
+  text-align: center;
 }
 
 .active{
@@ -183,4 +195,53 @@ nav .fa-angle-down{
   margin-inline-start: .3rem;
   font-size: 1.1rem;
 }
+}
+
+@media screen and (min-width: 768px){
+  
+body > header{
+    inline-size: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 2rem;
+  }
+
+  header li{
+    margin-inline: .5rem;
+  }
+
+  header a{
+    font-size: 1.2rem;
+  }
+
+  header ul{
+    display: flex;
+  }
+
+  header .fa-solid{
+    display: none;
+  }
+
+  nav .fa-angle-down{
+    display: inline-block;
+    margin-inline-start: .2rem;
+  }
+
+  nav li:nth-of-type(6) > div{
+    position: absolute;
+    left: -100px;
+    inline-size: 100%;
+  }
+
+  nav li:nth-of-type(6) > div > a{
+    line-height: 1.4;
+    color: var(--dark-red);
+    font-size: 1rem;
+  }
+
+  nav li:nth-of-type(6) > div > a:hover{
+    color: var(--gray);
+  }
 }
