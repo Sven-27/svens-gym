@@ -1,12 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Oswald:wght@300;400;700&family=Roboto+Condensed:wght@300;400;700&family=Roboto+Slab:wght@300;400;700&display=swap');
-
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-
 :root{
   --montserrat: 'Montserrat', sans-serif;
   --bg-primary: rgb(230,230,230);
@@ -14,137 +5,6 @@
   --red: rgb(180,0,0);
   --dark-red: rgb(100,0,0);
   --gray: rgb(100,100,100);
-}
-
-body{
-  background-color: var(--bg-primary); 
-  font-family: var(--montserrat);
-}
-
-h1,
-h2,
-h3{
-  --oswald: 'Oswald', sans-serif;
-  font-family: var(--oswald);
-  font-weight: 700;
-  color: var(--gray);
-  padding-inline: 1rem;
-}
-
-h2{
-  font-size: 1.1rem;
-}
-
-.active{
-  text-decoration: underline;
-}
-
-a{
-  text-decoration: none;
-  --webkit-tap-highlight-color: transparent;
-  color: var(--red);
-  
-}
-a:visited{
-  color: var(--dark-red);
-}
-a:hover{
-  color: var(--gray);
-}
-a:active{
-  color: rgb(0,150,0);
-}
-
-ul{
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-body > header{
-  display: flex;
-  flex-direction: column;
-  inline-size: 100%;
-  align-items: center;
-  background-color: var(--bg-secondary);
-}
-
-header img{
-  inline-size: 5rem;
-}
-
-header > a{
-  position: relative;
-}
-
-header > a::before{
-  content: 'Fitness';
-  position: absolute;
-  left: 17px;
-  bottom: 25px;
-  color: rgb(230,230,230);
-  font-size: .8rem;
-  z-index: 10;
-}
-
-nav button{
-  background-color: transparent;
-  border: none;
-  color: var(--dark-red);
-  font-size: 1.1rem;
-  font-weight: 400;
-  font-family: var(--montserrat);
-  line-height: 1.4;
-  cursor: pointer;
-}
-
-nav button:hover{
-  color: var(--gray);
-}
-
-nav li:nth-of-type(6){
-  position: relative;
-}
-
-nav li:nth-of-type(6) > div{
-  border: 1px solid var(--dark-red);
-  padding: .3rem .5rem;
-  background-color: rgb(150,150,150);
-  border-radius: 3px;
-  position: absolute;
-  top: 24px;
-  left: 0;
-  right: -50px;
-}
-
-.dropdown-content{
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: rgb(230,230,230);
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-} 
-
-.dropdown-content a{
-  display: block;
-  color: var(--dark-red);
-}
-
-.show{
-  display: block;
-}
-
-nav li:nth-of-type(2):hover > div{
-  display: flex;
-  flex-direction: column;
-}
-
-nav li:nth-of-type(2) > div > a{
-  line-height: 1.4;
-  color: var(--dark-red);
 }
 
 article > header{
@@ -165,45 +25,18 @@ article p{
   line-height: 1.3;
 }
 
-@media screen and (max-width: 767px){
-  header > nav{
-  position: fixed;
-  top: 0;
-  right: 0;
-  inline-size: 200px;
-  block-size: 100%;
-  background-color: var(--bg-secondary);
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  transition: .8s linear; 
-  transform: translateX(100%);
-  z-index: 20;
+main > section:first-of-type > div{
+  padding-inline: 1rem;
+  inline-size: 100%;
 }
 
-.menu{
-  transform: translateX(0);
+main > section:first-of-type img,
+main > section:first-of-type iframe,
+main > section:first-of-type video{
+ inline-size: 100%;
 }
 
-nav a{
-  line-height: 1.8;
-}
 
-header i{
-  color: var(--red);
-  font-size: 1.5rem;
-}
-
-header .fa-bars{
-  margin-block-end: 1rem;
-}
-
-nav .fa-angle-down{
-  color: var(--dark-red);
-  margin-inline-start: .3rem;
-  font-size: 1.1rem;
-}
-}
 
 main{
   inline-size: 100%;
@@ -214,18 +47,8 @@ main header{
 }
 
 main > section > h2{
-  margin-block: .32rem;
+  margin-block: .3rem;
 } 
-
-main > section > iframe{
-  inline-size: 100vw;
-  block-size: 210px;
-}
-
-main > section > video{
-  inline-size: 100vw;
-  block-size: 210px;
-}
 
 @media screen and (min-width: 768px){
   

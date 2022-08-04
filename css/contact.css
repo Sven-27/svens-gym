@@ -1,0 +1,8 @@
+:root{
+  --montserrat: 'Montserrat', sans-serif;
+  --bg-primary: rgb(230,230,230);
+  --bg-secondary: rgb(180,180,180);
+  --red: rgb(180,0,0);
+  --dark-red: rgb(100,0,0);
+  --gray: rgb(100,100,100);
+}
