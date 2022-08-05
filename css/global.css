@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Oswald:wght@300;400;700&family=Roboto+Condensed:wght@300;400;700&family=Roboto+Slab:wght@300;400;700&display=swap');
 
+/* general styling for headings body anchor and ul */
+
 *{
   margin: 0;
   padding: 0;
@@ -64,6 +66,8 @@ a:hover{
 a:active{
   color: rgb(0,150,0);
 }
+
+/* Styling the header/menu */
 
 ul{
   list-style: none;
@@ -157,6 +161,37 @@ nav li:nth-of-type(2) > div > a{
   color: var(--dark-red);
 }
 
+/* styling footer */
+footer{
+  background-color: var(--bg-secondary);
+  text-align: center;
+  padding-block: .7rem;
+}
+
+footer > h3{
+  margin-block-end: .3rem;
+}
+
+footer > a{
+  color: var(--dark-red);
+}
+
+footer > a:first-of-type::after{
+  content: '|';
+  padding-inline-start: .5rem;
+}
+
+footer > p{
+  padding-block: .7rem;
+  color: var(--dark-red);
+}
+
+footer i{
+  font-size: 1.8rem;
+  margin-inline: .3rem;
+}
+
+/* Styling menu only for mobile */
 @media screen and (max-width: 767px){
   header > nav{
   position: fixed;
@@ -197,8 +232,23 @@ nav .fa-angle-down{
 }
 }
 
+
 @media screen and (min-width: 768px){
+  /* global styling */
+  h1{
+    font-size: 2.5rem;
+  }
+
+  h2{
+    font-size: 1.6rem;
+  }
+
+  article > section > p,
+  article > header > p{
+    font-size: 1.15rem;
+  }
   
+  /* styling the header/menu from tablet view */
 body > header{
     inline-size: 100%;
     display: flex;
@@ -243,5 +293,20 @@ body > header{
 
   nav li:nth-of-type(6) > div > a:hover{
     color: var(--gray);
+  }
+
+  /* styling footer tablet */
+  footer > h3{
+    font-size: 1.6rem;
+  }
+
+  footer > a,
+  footer > p{
+    font-size: 1.3rem;
+  }
+
+  footer i{
+    font-size: 2.3rem;
+    margin: .6rem;
   }
 }

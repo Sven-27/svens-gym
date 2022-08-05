@@ -14,3 +14,5 @@ Ik weet dat het eigenlijk de bedoeling is om alles in een te gooien maar met zov
 globale styling in een aparte file te hebben. Heb gekeken of ik de variabelen kon importeren of iets vergelijkbaars
 maar dat heb ik niet kunnen vinden vandaar dat in elke file de variabelen staan want anders werkt styling schijnbaar niet 
 als je variabelen gebruikt in andere files.
+
+*De email en telefoonnummer zijn verzonnen en de social media links hebben een # in de href die leiden nergens heen. 
