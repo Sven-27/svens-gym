@@ -16,3 +16,6 @@ maar dat heb ik niet kunnen vinden vandaar dat in elke file de variabelen staan 
 als je variabelen gebruikt in andere files.
 
 *De email en telefoonnummer zijn verzonnen en de social media links hebben een # in de href die leiden nergens heen. 
+
+*Voor hd schermen met meer dan 1920px heb ik in de global.css een media query gemaakt die standaar een font-size 20px heeft. 
+Zodat alles automatisch iets groter wordt.

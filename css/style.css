@@ -79,7 +79,7 @@ main > section:last-of-type p{
 
   article{
     display: grid;
-    grid-template: 1fr 2.5fr / repeat(2, 1fr);
+    grid-template: 1fr auto / repeat(2, 1fr);
   }
 
   article > header{
@@ -167,6 +167,7 @@ main > section:last-of-type p{
   }
 
   main > section:last-of-type{
+    display: grid;
     grid-template: repeat(2, auto) / 4.5rem repeat(3, 1fr) 4.5rem;
     gap: 0 1rem; 
   }
@@ -178,6 +179,16 @@ main > section:last-of-type p{
   main > section:last-of-type > figure{
     display: flex;
     flex-direction: column;
+  }
+
+  main > section:last-of-type img{
+    inline-size: 100%;
+    aspect-ratio: 16/9;
+  }
+
+   main > section:last-of-type > figure:nth-of-type(2){
+    flex-direction: column;
+    align-self: flex-start
   }
 
   main > section:last-of-type > figure:first-of-type{
