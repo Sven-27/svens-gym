@@ -19,6 +19,8 @@
 body{
   background-color: var(--bg-primary); 
   font-family: var(--montserrat);
+  max-inline-size: 1024px;
+  margin: 0 auto;
 }
 
 h1,
