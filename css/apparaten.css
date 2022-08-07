@@ -1,8 +1,135 @@
 :root{
   --montserrat: 'Montserrat', sans-serif;
+  --white: rgb(255,255,255);
   --bg-primary: rgb(230,230,230);
   --bg-secondary: rgb(180,180,180);
   --red: rgb(180,0,0);
   --dark-red: rgb(100,0,0);
   --gray: rgb(100,100,100);
+}
+
+main h1,
+main h2{
+  color: var(--white);
+  padding-inline: 0;
+}
+
+main h1{
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-block-end: 1.5rem;
+}
+
+main p{
+  line-height: 1.8;
+  margin-block-end: 3rem;
+  color: var(--white);
+}
+
+main > section a{
+  color: var(--white) !important;
+  border: 2px solid var(--white);
+  display: block;
+  margin-block-end: 3rem;
+  padding-block: 1rem;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+figure:not(:first-of-type) > a{
+  display: inline;
+}
+
+header > a{
+  padding-block: 0;
+  margin-block-end: 0;
+  border: none;
+}
+
+main > section{
+  inline-size: 100%;
+  padding-inline: 1rem;
+}
+
+section > figure{
+  margin-block-end: 1rem;
+}
+
+section > figure:first-of-type{
+  inline-size: 100%;
+  background-color: rgba(0,0,0,.5);
+  block-size: 90vh;
+  position: relative;
+  padding: 2rem 1rem 2rem 2rem 
+}
+
+section > figure:first-of-type::after{
+  content: '';
+  background-image: url('../media/img/krachttraining-apparatuur.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+section > figure:not(:first-of-type){
+  inline-size: 100%;
+  block-size: 12vh;
+  background-color: rgba(0,0,0,.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block-start: .8rem;
+  position: relative;
+}
+
+figure:not(:first-of-type) > a{
+  padding-inline: 2rem;
+}
+
+section > figure:not(:first-of-type):after{
+  content: '';
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+section > figure:nth-of-type(2):after{
+  background-image: url('../media/img/cardio-hometrainer.jpg');
+  background-position-y: center;
+}
+
+section > figure:nth-of-type(3):after{
+  content: '';
+  background-image: url('../media/img/trainingsbanken.jpg');
+  background-position-y: top;
+}
+
+section > figure:nth-of-type(4):after{
+  content: '';
+  background-image: url('../media/img/dumbels.jpg');
+  background-position-y: center;
+}
+
+section > figure:nth-of-type(5):after{
+  content: '';
+  background-image: url('../media/img/crosstrainer.jpg');
+  background-position-y: center;
+}
+
+section > figure:last-of-type:after{
+  content: '';
+  background-image: url('../media/img/halterset-40kg.jpg');
+  background-position-y: center;
 }
