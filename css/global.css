@@ -22,7 +22,7 @@ body{
   background-color: var(--bg-primary); 
   font-family: var(--montserrat);
   margin: 0 auto;
-  max-inline-size: 1440px;
+  max-inline-size: 1024px;
   padding: 0;
 }
 
