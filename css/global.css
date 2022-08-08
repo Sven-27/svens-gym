@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Oswald:wght@300;400;700&family=Roboto+Condensed:wght@300;400;700&family=Roboto+Slab:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Oswald:wght@300;400;500;700&family=Roboto+Condensed:wght@300;400;700&family=Roboto+Slab:wght@300;400;700&display=swap');
 
 /* Passed the css-validator */
 
@@ -12,6 +12,7 @@
 
 :root{
   --montserrat: 'Montserrat', sans-serif;
+  --white: rgb(255,255,255);
   --bg-primary: rgb(230,230,230);
   --red: rgb(180,0,0);
   --dark-red: rgb(100,0,0);
@@ -320,19 +321,23 @@ body > header{
 }
 
 @media screen and (min-width: 1024px){
-  body > header,
-  article{
-    padding-inline: 6rem;
+  body > header
+  {
+    padding-inline: 4rem;
   }
 
   hr{
-    margin-inline: 6rem;
+    margin-inline: 2rem;
+  }
+
+  article{
+    padding-inline: 2rem;
   }
 
   footer{
     display: grid;
     grid-template: auto / repeat(3, 1fr);
-    padding-inline: 6rem;
+    padding-inline: 1rem;
   }
 
   footer > section:first-of-type > h2{

@@ -10,8 +10,7 @@
   --gray: rgb(100,100,100);
 }
 
-main h1,
-main h2{
+main h1{
   color: var(--white);
   padding-inline: 0;
 }
@@ -28,7 +27,7 @@ main p{
   color: var(--white);
 }
 
-main > section a{
+main a{
   color: var(--white) !important;
   border: 2px solid var(--white);
   display: block;
@@ -48,16 +47,16 @@ header > a{
   border: none;
 }
 
-main > section{
+main{
   inline-size: 100%;
   padding-inline: 1rem;
 }
 
-section > figure{
+main > figure{
   margin-block-end: 1rem;
 }
 
-section > figure:first-of-type{
+main > figure:first-of-type{
   inline-size: 100%;
   background-color: rgba(0,0,0,.5);
   block-size: 90vh;
@@ -65,7 +64,7 @@ section > figure:first-of-type{
   padding: 2rem 1rem 2rem 2rem 
 }
 
-section > figure:first-of-type::after{
+main > figure:first-of-type::after{
   content: '';
   background-image: url('../media/img/krachttraining-apparatuur.jpg');
   background-size: cover;
@@ -79,7 +78,7 @@ section > figure:first-of-type::after{
   z-index: -1;
 }
 
-section > figure:not(:first-of-type){
+main > figure:not(:first-of-type){
   inline-size: 100%;
   block-size: 12vh;
   background-color: rgba(0,0,0,.5);
@@ -94,7 +93,7 @@ figure:not(:first-of-type) > a{
   transform: translate(-50%, -50%);
 }
 
-section > figure:not(:first-of-type):after{
+main > figure:not(:first-of-type):after{
   content: '';
   background-size: cover;
   background-repeat: no-repeat;
@@ -107,97 +106,97 @@ section > figure:not(:first-of-type):after{
   z-index: -1;
 }
 
-section > figure:nth-of-type(2):after{
+main > figure:nth-of-type(2):after{
   background-image: url('../media/img/cardio-hometrainer.jpg');
   background-position-y: center;
 }
 
-section > figure:nth-of-type(3):after{
+main > figure:nth-of-type(3):after{
   content: '';
   background-image: url('../media/img/trainingsbanken.jpg');
   background-position-y: top;
 }
 
-section > figure:nth-of-type(4):after{
+main > figure:nth-of-type(4):after{
   content: '';
   background-image: url('../media/img/dumbels.jpg');
   background-position-y: center;
 }
 
-section > figure:nth-of-type(5):after{
+main > figure:nth-of-type(5):after{
   content: '';
   background-image: url('../media/img/crosstrainer.jpg');
   background-position-y: center;
 }
 
-section > figure:last-of-type:after{
+main > figure:last-of-type:after{
   content: '';
   background-image: url('../media/img/halterset-40kg.jpg');
   background-position-y: center;
 }
 
 @media screen and (min-width: 768px){
-  section > figure:first-of-type{
+  main > figure:first-of-type{
     block-size: 50vh;
   }
-  section > figure:first-of-type > h1{
+  main > figure:first-of-type > h1{
     font-size: 2.5rem;
   }
-  section > figure:first-of-type > p{
+  main > figure:first-of-type > p{
     font-size: 1.2rem;
   }
 
-  section > figure:first-of-type > a{
+  main > figure:first-of-type > a{
     display: flex;
     inline-size: max-content;
     padding-inline: 2rem;
   }
 
-  section > figure:not(:first-of-type){
+  main > figure:not(:first-of-type){
     block-size: 18vh;
   }
 
-  section > figure:nth-of-type(2):after{
+  main > figure:nth-of-type(2):after{
   background-position-y: bottom;
 }
 }
 
 @media screen and (min-width: 1024px){
-  main > section{
+  main{
     display: grid;
     grid-template: 60vh 30vh 25vh / repeat(3, 1fr);
     grid-gap: 1.5rem;
     padding: 3rem 2rem;
   }
 
-  section > figure:first-of-type{
+  main > figure:first-of-type{
     grid-column: 1 / span 3;
     block-size: 100%;
   }
-  section > figure:first-of-type > p{
+  main > figure:first-of-type > p{
     inline-size: 45%;
   }
-  section > figure:first-of-type > a{
+  main > figure:first-of-type > a{
     display: inline;
   }
 
-  section > figure:first-of-type > a:first-of-type{
+  main > figure:first-of-type > a:first-of-type{
     margin-inline-end: 1rem;
   }
 
-  section > figure:nth-of-type(2){
+  main > figure:nth-of-type(2){
     grid-column: 1 / span 2;
     block-size: 100%;
   }
 
-  section > figure:not(:first-of-type):after{
+  main > figure:not(:first-of-type):after{
     background-size: cover;
   }
 
-  section > figure:nth-of-type(3),
-  section > figure:nth-of-type(4),
-  section > figure:nth-of-type(5),
-  section > figure:nth-of-type(6){
+  main > figure:nth-of-type(3),
+  main > figure:nth-of-type(4),
+  main > figure:nth-of-type(5),
+  main > figure:nth-of-type(6){
     block-size: 100%;
   }
 }
