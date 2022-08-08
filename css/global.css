@@ -349,7 +349,7 @@ body > header{
   footer > section:first-of-type > a{
     display: block;
     grid-area: 2 / 2 / 3 / 2;
-    text-align: left;
+    text-align: center;
     padding-block: .2rem;
     align-content: space-between
   }
@@ -369,43 +369,6 @@ body > header{
   footer > section:last-of-type > h2{
     text-align: center;
     /* padding-block-end: 1rem; */
-  }
-}
-
-@media screen and (min-width: 1440px){
-  footer{
-    padding-block-end: 2rem;
-  }
-
-  footer > section:first-of-type > h2{
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-  }
-
-  footer > section:first-of-type > a{
-    grid-area: 1 / 1 / 3 / 2;
-    text-align: left;
-    display: inline;
-    align-self: flex-end;
-  }
-
-  footer > p{
-    grid-area: 1 / 2 / 2 / 3;
-    text-align: center;
-    align-self: center;
-    margin-block-start: 1.3rem;
-  }
-
-  footer > section:last-of-type{
-    grid-area: 1 / 3 / 2 / 3;
-    align-self: flex-end;
-  }
-
-  footer > section:last-of-type i{
-    align-self: flex-end;
-    margin-block-end: 0;
-
   }
 }
 
