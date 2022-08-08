@@ -201,18 +201,3 @@ section > figure:last-of-type:after{
     block-size: 100%;
   }
 }
-
-/* @media screen and (min-width: 1440px){
-  main > section{
-    grid-template: 45vh 55vh 45vh / repeat(3, 1fr);
-  }
-
-  section > figure:first-of-type > a:first-of-type{
-    margin-inline-end: 8rem;
-  } 
-
-  section > figure:not(:first-of-type):after{
-    background-size: cover;
-  } */
-
-/* } */

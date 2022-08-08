@@ -368,7 +368,6 @@ body > header{
 
   footer > section:last-of-type > h2{
     text-align: center;
-    /* padding-block-end: 1rem; */
   }
 }
 
