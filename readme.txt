@@ -1,3 +1,13 @@
+* Bij alle pagina's behalve bij de voeding pagina heb ik de grid layout op de elementen zelf gebruikt. 
+Omdat de layout van deze pagina in de body op alle schermen onder elkaar staan. En daarom is het zinloos om 
+deze grid te maken op de body. Echter de elementen main, article, section en footer hebben zelf wel grid layout.
+
+Op de pagina van de voeding heb ik de grid layout wel op de body gemaakt omdat ik hier een aside
+toegevoegd heb en die bij media query 1024px naast de main wilde hebben. 
+
+De header is een lijn met stylen en is het zinloos om hier met grid te werken. 
+Daarvoor heb ik hier voor flex gekozen.
+
 * Bij het menu heb ik een hamburger menu gemaakt die toggled middels javascript. 
 Er zit een external js file die via de script element boven de closing tag van de body
 gekoppeld is aan de html.
@@ -19,3 +29,6 @@ als je variabelen gebruikt in andere files.
 
 *Voor hd schermen met meer dan 1920px heb ik in de global.css een media query gemaakt die standaar een font-size 20px heeft. 
 Zodat alles automatisch iets groter wordt.
+In deze media query zou de max-inline-size ook breder gezet kunnen worden zodat het iets meer vulling geeft. Maar die heb ik er voor 
+nu niet bij. 
+Ik heb ook geen hd scherm om te kunnen controleren of het dan wel allemaal goed blijft. 
