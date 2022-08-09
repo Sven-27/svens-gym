@@ -164,6 +164,10 @@ tbody > tr:nth-child(even){
     grid-column: 1 / span 4;
   }
 
+  h1{
+    text-align: left;
+  }
+
   main{
     grid-area: main;
     grid-column: 1 / span 2;
@@ -182,7 +186,7 @@ tbody > tr:nth-child(even){
   aside{
     grid-area: aside;
     grid-column: 3 / span 2;
-    margin-block-start: 6rem;
+    margin-block-start: 4rem;
   }
 
   footer{
