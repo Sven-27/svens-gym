@@ -94,6 +94,11 @@ thead > tr{
   color: var(--white);
 }
 
+th:first-child,
+td:first-child{
+  padding-inline: .5rem;
+}
+
 tbody > tr:nth-child(even){
   background-color: var(--bg-secondary);
 }
@@ -202,6 +207,11 @@ div > img{
   aside > table{
     margin-block-end: 3rem;
   }
+
+  th:first-child,
+td:first-child{
+  padding-inline: 1rem;
+}
 
   div > img{
     inline-size: 50%;
